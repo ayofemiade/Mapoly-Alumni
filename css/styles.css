@@ -207,6 +207,50 @@ section {
     width: 100%;
 }
 
+/* Dropdown Menu Styles */
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    min-width: 20rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(1rem);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.has-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 1rem 2rem;
+    color: var(--charcoal);
+    font-weight: 400;
+    transition: all 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--off-white);
+    color: var(--navy-blue);
+}
+
 .mobile-menu-toggle {
     display: none;
     background: none;
@@ -658,6 +702,32 @@ section {
     
     .main-nav .nav-list li {
         margin: 1.5rem 0;
+    }
+    
+    /* Mobile Dropdown Styles */
+    .dropdown-menu {
+        position: static;
+        background-color: var(--off-white);
+        min-width: 100%;
+        box-shadow: none;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transform: none;
+        transition: all 0.3s ease;
+        padding: 0;
+    }
+    
+    .has-dropdown.active .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 50rem;
+        padding: 1rem 0;
+    }
+    
+    .dropdown-menu a {
+        padding: 1rem;
     }
     
     .hero-content h1 {

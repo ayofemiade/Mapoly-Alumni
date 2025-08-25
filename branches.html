@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branches - MAPOLY Alumni Association</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/branches.css">
+    <link rel="stylesheet" href="css/placeholders.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-placeholder">MAPOLY Alumni Logo</div>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li class="has-dropdown">
+                            <a href="branches.html" class="active">Branches <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="branches.html#lagos">Lagos Branch</a></li>
+                                <li><a href="branches.html#abuja">Abuja Branch</a></li>
+                                <li><a href="branches.html#ogun">Ogun Branch</a></li>
+                                <li><a href="branches.html#usa">USA Branch</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="executive.html">Executives</a></li>
+                        <li><a href="donations.html">Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Branches Banner -->
+    <section class="branches-banner">
+        <div class="banner-overlay"></div>
+        <div class="container">
+            <div class="banner-content">
+                <h1>MAPOLY Alumni Branches</h1>
+                <p>Connecting Loyolans worldwide</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Grid -->
+    <section class="branches-grid">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Branches</h2>
+                <p>Connect with fellow alumni in your region</p>
+            </div>
+
+            <div class="branches-container">
+                <!-- Lagos Branch -->
+                <div id="lagos" class="branch-card">
+                    <div class="branch-header">
+                        <h3>Lagos Branch</h3>
+                        <div class="branch-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                    <div class="branch-content">
+                        <div class="branch-image">
+                            <div class="image-placeholder branch-placeholder">Lagos Branch</div>
+                        </div>
+                        <div class="branch-info">
+                            <div class="info-item">
+                                <i class="fas fa-user"></i>
+                                <p><strong>Chairman:</strong> Dr. Oluwaseun Adebayo</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <p><strong>Email:</strong> lagos@mapolyalumni.org</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <p><strong>Phone:</strong> +234 801 234 5678</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-users"></i>
+                                <p><strong>Members:</strong> 2,500+</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="branch-footer">
+                        <button class="btn btn-primary branch-details-btn" data-branch="lagos">View More</button>
+                    </div>
+                </div>
+
+                <!-- Abuja Branch -->
+                <div id="abuja" class="branch-card">
+                    <div class="branch-header">
+                        <h3>Abuja Branch</h3>
+                        <div class="branch-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Abuja, Nigeria</span>
+                        </div>
+                    </div>
+                    <div class="branch-content">
+                        <div class="branch-image">
+                            <div class="image-placeholder branch-placeholder">Abuja Branch</div>
+                        </div>
+                        <div class="branch-info">
+                            <div class="info-item">
+                                <i class="fas fa-user"></i>
+                                <p><strong>Chairman:</strong> Mrs. Funke Akindele</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <p><strong>Email:</strong> abuja@mapolyalumni.org</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <p><strong>Phone:</strong> +234 802 345 6789</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-users"></i>
+                                <p><strong>Members:</strong> 1,800+</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="branch-footer">
+                        <button class="btn btn-primary branch-details-btn" data-branch="abuja">View More</button>
+                    </div>
+                </div>
+
+                <!-- Ogun Branch -->
+                <div id="ogun" class="branch-card">
+                    <div class="branch-header">
+                        <h3>Ogun Branch</h3>
+                        <div class="branch-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Abeokuta, Ogun State</span>
+                        </div>
+                    </div>
+                    <div class="branch-content">
+                        <div class="branch-image">
+                            <div class="image-placeholder branch-placeholder">Ogun Branch</div>
+                        </div>
+                        <div class="branch-info">
+                            <div class="info-item">
+                                <i class="fas fa-user"></i>
+                                <p><strong>Chairman:</strong> Mr. Babatunde Johnson</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <p><strong>Email:</strong> ogun@mapolyalumni.org</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <p><strong>Phone:</strong> +234 803 456 7890</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-users"></i>
+                                <p><strong>Members:</strong> 3,200+</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="branch-footer">
+                        <button class="btn btn-primary branch-details-btn" data-branch="ogun">View More</button>
+                    </div>
+                </div>
+
+                <!-- USA Branch -->
+                <div id="usa" class="branch-card">
+                    <div class="branch-header">
+                        <h3>USA Branch</h3>
+                        <div class="branch-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>New York, USA</span>
+                        </div>
+                    </div>
+                    <div class="branch-content">
+                        <div class="branch-image">
+                            <div class="image-placeholder branch-placeholder">USA Branch</div>
+                        </div>
+                        <div class="branch-info">
+                            <div class="info-item">
+                                <i class="fas fa-user"></i>
+                                <p><strong>Chairman:</strong> Dr. Olufemi Bakare</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <p><strong>Email:</strong> usa@mapolyalumni.org</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <p><strong>Phone:</strong> +1 212 345 6789</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-users"></i>
+                                <p><strong>Members:</strong> 850+</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="branch-footer">
+                        <button class="btn btn-primary branch-details-btn" data-branch="usa">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branch Details Modal -->
+    <div class="modal" id="branch-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Join a Branch Section -->
+    <section class="join-branch">
+        <div class="container">
+            <div class="join-content">
+                <div class="join-text">
+                    <h2>Join Your Local Branch</h2>
+                    <p>Connect with fellow alumni in your area, participate in local events, and contribute to your community. Not seeing a branch in your region? Consider starting one!</p>
+                    <a href="membership.html" class="btn btn-primary">Join Now</a>
+                </div>
+                <div class="start-branch">
+                    <h3>Start a New Branch</h3>
+                    <p>Interested in establishing a MAPOLY Alumni branch in your region? We're here to support you.</p>
+                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-placeholder logo-white-placeholder">MAPOLY Alumni Logo</div>
+                    <p>Connecting and empowering MAPOLY graduates since 1979.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="branches.html">Branches</a></li>
+                        <li><a href="executive.html">Executives</a></li>
+                        <li><a href="donations.html">Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> MAPOLY Campus, Abeokuta, Ogun State</p>
+                    <p><i class="fas fa-phone"></i> +234 803 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@mapolyalumni.org</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest updates and events.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MAPOLY Alumni Association. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/branches.js"></script>
+</body>
+</html>

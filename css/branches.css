@@ -1,0 +1,432 @@
+/* Branches Page Styles */
+
+/* Banner Section */
+.branches-banner {
+    height: 40vh;
+    min-height: 30rem;
+    background-color: var(--navy-blue); /* Placeholder for background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.branches-banner .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 26, 100, 0.8);
+}
+
+.branches-banner .banner-content {
+    position: relative;
+    z-index: 1;
+    color: var(--white);
+    width: 100%;
+}
+
+.branches-banner h1 {
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-size: 4.2rem;
+}
+
+.branches-banner p {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+/* Branches Grid Section */
+.branches-grid {
+    padding: 8rem 0;
+    background-color: var(--off-white);
+}
+
+.branches-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.branch-card {
+    background-color: var(--white);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-margin-top: 10rem; /* For smooth scrolling to anchors */
+}
+
+.branch-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.branch-header {
+    padding: 2rem;
+    background-color: var(--navy-blue);
+    color: var(--white);
+}
+
+.branch-header h3 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.branch-location {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.branch-location i {
+    margin-right: 1rem;
+    color: var(--gold);
+}
+
+.branch-content {
+    padding: 2rem;
+}
+
+.branch-image {
+    margin-bottom: 2rem;
+}
+
+.branch-placeholder {
+    min-height: 200px;
+    background-color: #e2e8f0;
+}
+
+.branch-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.info-item i {
+    color: var(--navy-blue);
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+}
+
+.info-item p {
+    margin-bottom: 0;
+}
+
+.branch-footer {
+    padding: 2rem;
+    border-top: 1px solid var(--light-gray);
+    text-align: center;
+}
+
+/* Join a Branch Section */
+.join-branch {
+    padding: 8rem 0;
+    background-color: var(--white);
+}
+
+.join-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.join-text h2 {
+    margin-bottom: 2rem;
+}
+
+.join-text p {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+}
+
+.start-branch {
+    background-color: var(--off-white);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.start-branch h3 {
+    margin-bottom: 1.5rem;
+}
+
+.start-branch p {
+    margin-bottom: 2rem;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: var(--white);
+    margin: 10% auto;
+    padding: 0;
+    width: 80%;
+    max-width: 80rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+    from {opacity: 0; transform: translateY(-50px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.close-modal {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    color: var(--charcoal);
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.close-modal:hover {
+    color: var(--navy-blue);
+}
+
+.modal-body {
+    padding: 3rem;
+}
+
+.modal-header {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding: 3rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.modal-header h2 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.modal-section {
+    margin-bottom: 3rem;
+}
+
+.modal-section h3 {
+    margin-bottom: 1.5rem;
+    color: var(--navy-blue);
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 1rem;
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.modal-info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.modal-info-item i {
+    color: var(--navy-blue);
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+    min-width: 2rem;
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+}
+
+.event-list li {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-list li:last-child {
+    border-bottom: none;
+}
+
+.event-date {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+/* Dropdown Menu Styles */
+.has-dropdown {
+    position: relative;
+}
+
+.has-dropdown > a {
+    display: flex;
+    align-items: center;
+}
+
+.has-dropdown > a i {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.has-dropdown:hover > a i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    min-width: 20rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.has-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 1rem 2rem;
+    color: var(--charcoal);
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--off-white);
+    color: var(--navy-blue);
+}
+
+/* Mobile Dropdown Menu */
+@media (max-width: 992px) {
+    .dropdown-menu {
+        position: static;
+        background-color: var(--off-white);
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0;
+    }
+    
+    .has-dropdown.active .dropdown-menu {
+        max-height: 500px;
+    }
+    
+    .dropdown-menu a {
+        padding-left: 4rem;
+    }
+    
+    .has-dropdown > a i {
+        transition: transform 0.3s ease;
+    }
+    
+    .has-dropdown.active > a i {
+        transform: rotate(180deg);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .branches-container {
+        grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+    }
+    
+    .join-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .modal-content {
+        width: 90%;
+        margin: 5% auto;
+    }
+    
+    .modal-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .branches-banner {
+        min-height: 25rem;
+    }
+    
+    .branches-banner h1 {
+        font-size: 3.6rem;
+    }
+    
+    .branches-banner p {
+        font-size: 1.8rem;
+    }
+    
+    .branch-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .branches-banner h1 {
+        font-size: 3rem;
+    }
+    
+    .branches-banner p {
+        font-size: 1.6rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+    
+    .modal-body {
+        padding: 2rem;
+    }
+}

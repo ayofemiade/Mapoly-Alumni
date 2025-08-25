@@ -25,6 +25,31 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+    // Mobile Dropdown Menu Toggle
+    const hasDropdown = document.querySelector('.has-dropdown');
+    
+    if (hasDropdown) {
+        // For mobile: toggle dropdown on click
+        if (window.innerWidth < 992) {
+            const dropdownToggle = hasDropdown.querySelector('a');
+            
+            dropdownToggle.addEventListener('click', function(e) {
+                // Only prevent default if we're in mobile view
+                if (window.innerWidth < 992) {
+                    e.preventDefault();
+                    hasDropdown.classList.toggle('active');
+                }
+            });
+        }
+        
+        // Handle resize events to reset dropdown state
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 992) {
+                hasDropdown.classList.remove('active');
+            }
+        });
+    }
+    
     // Events Slider
     const slider = document.querySelector('.slider');
     const prevBtn = document.querySelector('.slider-btn.prev');
