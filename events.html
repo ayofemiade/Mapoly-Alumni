@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - MAPOLY Alumni Association</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/placeholders.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="MAPOLY Alumni Logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="events.html" class="active">Events</a></li>
+                        <li><a href="executive.html">Executives</a></li>
+                        <li><a href="donations.html">Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Events Banner -->
+    <section class="events-banner">
+        <div class="banner-overlay"></div>
+        <div class="container">
+            <div class="banner-content">
+                <h1>Alumni Events</h1>
+                <p>Connect, network, and celebrate with fellow MAPOLY graduates at our upcoming events.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Filters -->
+    <section class="event-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="event-type">Event Type</label>
+                    <select id="event-type" class="filter-select">
+                        <option value="all">All Events</option>
+                        <option value="networking">Networking</option>
+                        <option value="reunion">Reunion</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="fundraising">Fundraising</option>
+                        <option value="social">Social</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="event-location">Location</label>
+                    <select id="event-location" class="filter-select">
+                        <option value="all">All Locations</option>
+                        <option value="abeokuta">Abeokuta</option>
+                        <option value="lagos">Lagos</option>
+                        <option value="abuja">Abuja</option>
+                        <option value="online">Online</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="event-date">Date Range</label>
+                    <select id="event-date" class="filter-select">
+                        <option value="all">All Dates</option>
+                        <option value="this-month">This Month</option>
+                        <option value="next-month">Next Month</option>
+                        <option value="next-3-months">Next 3 Months</option>
+                        <option value="next-6-months">Next 6 Months</option>
+                    </select>
+                </div>
+                <button id="filter-button" class="btn btn-primary">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- View Toggle -->
+    <section class="view-toggle">
+        <div class="container">
+            <div class="toggle-container">
+                <button class="toggle-btn active" data-view="grid">
+                    <i class="fas fa-th"></i> Grid View
+                </button>
+                <button class="toggle-btn" data-view="calendar">
+                    <i class="fas fa-calendar-alt"></i> Calendar View
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Grid -->
+    <section class="upcoming-events view-section active" id="grid-view">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="events-grid">
+                <!-- Event Card 1 -->
+                <div class="event-card" data-type="networking" data-location="lagos">
+                    <div class="event-image">
+                        <div class="image-placeholder event-placeholder">Annual Alumni Networking Mixer</div>
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">JUN</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-tag networking">Networking</div>
+                        <h3>Annual Alumni Networking Mixer</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-clock"></i> 6:00 PM - 9:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Radisson Blu Hotel, Lagos</p>
+                        </div>
+                        <p class="event-description">Connect with fellow alumni and industry professionals at our annual networking event. Enjoy refreshments, meaningful conversations, and potential career opportunities.</p>
+                        <div class="event-footer">
+                            <a href="#" class="btn btn-primary">RSVP Now</a>
+                            <span class="event-spots"><i class="fas fa-user"></i> 45 spots left</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="event-card" data-type="workshop" data-location="online">
+                    <div class="event-image">
+                        <div class="image-placeholder event-placeholder">Career Development Workshop</div>
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">JUN</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-tag workshop">Workshop</div>
+                        <h3>Career Development Workshop</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-clock"></i> 10:00 AM - 12:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Online (Zoom)</p>
+                        </div>
+                        <p class="event-description">Join our virtual workshop focused on career advancement strategies. Learn from industry experts about resume building, interview techniques, and personal branding.</p>
+                        <div class="event-footer">
+                            <a href="#" class="btn btn-primary">Register</a>
+                            <span class="event-spots"><i class="fas fa-user"></i> Unlimited spots</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 3 -->
+                <div class="event-card" data-type="reunion" data-location="abeokuta">
+                    <div class="event-image">
+                        <div class="image-placeholder event-placeholder">Class of 2010 Reunion</div>
+                        <div class="event-date">
+                            <span class="day">08</span>
+                            <span class="month">JUL</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-tag reunion">Reunion</div>
+                        <h3>Class of 2010 Reunion</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-clock"></i> 12:00 PM - 6:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> MAPOLY Campus, Abeokuta</p>
+                        </div>
+                        <p class="event-description">Reconnect with your classmates and celebrate 13 years since graduation. The day includes campus tours, lunch, and an evening reception with entertainment.</p>
+                        <div class="event-footer">
+                            <a href="#" class="btn btn-primary">RSVP Now</a>
+                            <span class="event-spots"><i class="fas fa-user"></i> 30 spots left</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 4 -->
+                <div class="event-card" data-type="fundraising" data-location="abuja">
+                    <div class="event-image">
+                        <div class="image-placeholder event-placeholder">Scholarship Fundraising Gala</div>
+                        <div class="event-date">
+                            <span class="day">20</span>
+                            <span class="month">JUL</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-tag fundraising">Fundraising</div>
+                        <h3>Scholarship Fundraising Gala</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-clock"></i> 7:00 PM - 11:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Transcorp Hilton, Abuja</p>
+                        </div>
+                        <p class="event-description">Join us for an elegant evening dedicated to raising funds for the MAPOLY Alumni Scholarship Fund. Enjoy dinner, entertainment, and a silent auction.</p>
+                        <div class="event-footer">
+                            <a href="#" class="btn btn-primary">Purchase Tickets</a>
+                            <span class="event-spots"><i class="fas fa-user"></i> 20 spots left</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 5 -->
+                <div class="event-card" data-type="social" data-location="lagos">
+                    <div class="event-image">
+                        <div class="image-placeholder event-placeholder">Alumni Family Day</div>
+                        <div class="event-date">
+                            <span class="day">05</span>
+                            <span class="month">AUG</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-tag social">Social</div>
+                        <h3>Alumni Family Day</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-clock"></i> 11:00 AM - 4:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Lekki Conservation Centre, Lagos</p>
+                        </div>
+                        <p class="event-description">Bring your family for a day of fun activities, games, and refreshments. Connect with other alumni families and enjoy the beautiful conservation center.</p>
+                        <div class="event-footer">
+                            <a href="#" class="btn btn-primary">Register</a>
+                            <span class="event-spots"><i class="fas fa-user"></i> 50 spots left</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 6 -->
+                <div class="event-card" data-type="workshop" data-location="abeokuta">
+                    <div class="event-image">
+                        <div class="image-placeholder event-placeholder">Entrepreneurship Masterclass</div>
+                        <div class="event-date">
+                            <span class="day">12</span>
+                            <span class="month">AUG</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-tag workshop">Workshop</div>
+                        <h3>Entrepreneurship Masterclass</h3>
+                        <div class="event-details">
+                            <p><i class="fas fa-clock"></i> 9:00 AM - 3:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> MAPOLY Business School, Abeokuta</p>
+                        </div>
+                        <p class="event-description">Learn from successful alumni entrepreneurs about starting and scaling businesses in Nigeria. Includes networking lunch and Q&A session.</p>
+                        <div class="event-footer">
+                            <a href="#" class="btn btn-primary">Register</a>
+                            <span class="event-spots"><i class="fas fa-user"></i> 35 spots left</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more">
+                <button class="btn btn-secondary">Load More Events</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar View -->
+    <section class="calendar-view view-section" id="calendar-view">
+        <div class="container">
+            <h2 class="section-title">Events Calendar</h2>
+            <div id="events-calendar"></div>
+        </div>
+    </section>
+
+    <!-- Past Events Gallery -->
+    <section class="past-events">
+        <div class="container">
+            <h2 class="section-title">Past Events Gallery</h2>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="reunion">Reunions</button>
+                <button class="filter-btn" data-filter="networking">Networking</button>
+                <button class="filter-btn" data-filter="workshop">Workshops</button>
+                <button class="filter-btn" data-filter="fundraising">Fundraising</button>
+                <button class="filter-btn" data-filter="social">Social</button>
+            </div>
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-category="reunion">
+                    <a href="assets/gallery-1-large.jpg" class="gallery-link">
+                        <div class="image-placeholder gallery-placeholder">Class of 2005 Reunion</div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Class of 2005 Reunion</h4>
+                                <p>December 2022</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-category="networking">
+                    <a href="assets/gallery-2-large.jpg" class="gallery-link">
+                        <div class="image-placeholder gallery-placeholder">Tech Industry Mixer</div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Tech Industry Mixer</h4>
+                                <p>October 2022</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-category="fundraising">
+                    <a href="assets/gallery-3-large.jpg" class="gallery-link">
+                        <div class="image-placeholder gallery-placeholder">Annual Charity Gala</div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Annual Charity Gala</h4>
+                                <p>September 2022</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-category="workshop">
+                    <a href="assets/gallery-4-large.jpg" class="gallery-link">
+                        <div class="image-placeholder gallery-placeholder">Leadership Workshop</div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Leadership Workshop</h4>
+                                <p>August 2022</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-category="social">
+                    <a href="assets/gallery-5-large.jpg" class="gallery-link">
+                        <img src="assets/gallery-5.jpg" alt="End of Year Party">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>End of Year Party</h4>
+                                <p>December 2021</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-category="reunion">
+                    <a href="assets/gallery-6-large.jpg" class="gallery-link">
+                        <img src="assets/gallery-6.jpg" alt="Class of 2000 Reunion">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Class of 2000 Reunion</h4>
+                                <p>November 2021</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item" data-category="networking">
+                    <a href="assets/gallery-7-large.jpg" class="gallery-link">
+                        <img src="assets/gallery-7.jpg" alt="Business Networking Event">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Business Networking Event</h4>
+                                <p>October 2021</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item" data-category="workshop">
+                    <a href="assets/gallery-8-large.jpg" class="gallery-link">
+                        <img src="assets/gallery-8.jpg" alt="Digital Marketing Workshop">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Digital Marketing Workshop</h4>
+                                <p>September 2021</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-load-more">
+                <button class="btn btn-secondary">View More Photos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Proposal -->
+    <section class="event-proposal">
+        <div class="container">
+            <div class="proposal-content">
+                <div class="proposal-text">
+                    <h2>Have an Event Idea?</h2>
+                    <p>We welcome suggestions from our alumni community. If you have an idea for an event or would like to host one, let us know!</p>
+                    <a href="#" class="btn btn-primary">Propose an Event</a>
+                </div>
+                <div class="proposal-image">
+                    <img src="assets/event-proposal.jpg" alt="Propose an Event">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo-white.svg" alt="MAPOLY Alumni Logo">
+                    <p>Connecting and empowering MAPOLY graduates since 1979.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="executives.html">Executives</a></li>
+                        <li><a href="donations.html">Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> MAPOLY Campus, Abeokuta, Ogun State</p>
+                    <p><i class="fas fa-phone"></i> +234 803 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@mapolyalumni.org</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest updates and events.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MAPOLY Alumni Association. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <!-- Lightbox JS for Gallery -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-lightbox@2.1.0/dist/simpleLightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>

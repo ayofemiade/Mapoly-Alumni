@@ -1,0 +1,428 @@
+/* Executive Page Styles */
+
+/* Banner Styles */
+.executive-banner {
+    background: linear-gradient(rgba(28, 26, 100, 0.85), rgba(28, 26, 100, 0.85)), url('../images/executive-banner.jpg') no-repeat center center;
+    background-size: cover;
+    
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-top: 80px;
+
+}
+
+.executive-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.executive-banner p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+/* Executive Message Section */
+.executive-message {
+    padding: 80px 0;
+    background-color: #F9F9F9;
+}
+
+.message-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.message-image {
+    flex: 0 0 300px;
+}
+
+.message-image img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #C5A76D;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.message-text {
+    flex: 1;
+}
+
+.message-text h2 {
+    color: #1C1A64;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.president-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2B2B2B;
+    margin-bottom: 5px;
+}
+
+.president-class {
+    font-size: 1.1rem;
+    color: #5A285D;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.message-quote {
+    position: relative;
+    padding: 20px 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.message-quote p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2E2E30;
+    font-style: italic;
+}
+
+.message-quote .fa-quote-left,
+.message-quote .fa-quote-right {
+    color: #C5A76D;
+    font-size: 1.5rem;
+    position: absolute;
+}
+
+.message-quote .fa-quote-left {
+    top: 10px;
+    left: 10px;
+}
+
+.message-quote .fa-quote-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+.president-signature {
+    text-align: right;
+}
+
+.president-signature img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Executive Team Section */
+.executive-team {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    color: #1C1A64;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #5A285D;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.executive-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.executive-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.executive-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.executive-photo {
+    height: 280px;
+    overflow: hidden;
+}
+
+.executive-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.executive-card:hover .executive-photo img {
+    transform: scale(1.05);
+}
+
+.executive-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.executive-info h3 {
+    color: #1C1A64;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.executive-position {
+    color: #C5A76D;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.executive-class {
+    color: #5A285D;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.executive-profession {
+    color: #2E2E30;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.executive-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.executive-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #F9F9F9;
+    color: #1C1A64;
+    transition: all 0.3s ease;
+}
+
+.executive-social a:hover {
+    background-color: #1C1A64;
+    color: #FFFFFF;
+}
+
+/* Regional Representatives Section */
+.regional-reps {
+    padding: 80px 0;
+    background-color: #F9F9F9;
+}
+
+.regions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.region-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.region-header {
+    background-color: #1C1A64;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.region-header h3 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.region-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #C5A76D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.region-content {
+    padding: 20px;
+}
+
+.rep-info {
+    margin-bottom: 20px;
+}
+
+.rep-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2B2B2B;
+    margin-bottom: 5px;
+}
+
+.rep-class {
+    color: #5A285D;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.rep-contact {
+    color: #3C8DBC;
+    font-size: 0.9rem;
+}
+
+.rep-contact i {
+    margin-right: 5px;
+}
+
+.region-states,
+.region-countries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.region-states span,
+.region-countries span {
+    background-color: #F9F9F9;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #2E2E30;
+}
+
+/* Join Leadership Section */
+.join-leadership {
+    padding: 80px 0;
+    background: linear-gradient(rgba(28, 26, 100, 0.9), rgba(28, 26, 100, 0.9)), url('../images/leadership-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.join-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.join-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.join-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.leadership-cta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .executive-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .message-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .message-image {
+        flex: 0 0 250px;
+        margin-bottom: 30px;
+    }
+    
+    .president-signature {
+        text-align: center;
+    }
+    
+    .executive-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .regions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .executive-banner h1 {
+        font-size: 2.5rem;
+    }
+    
+    .executive-banner p {
+        font-size: 1rem;
+    }
+    
+    .message-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .join-content h2 {
+        font-size: 2rem;
+    }
+    
+    .leadership-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .executive-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .executive-banner {
+        padding: 60px 0;
+    }
+    
+    .executive-banner h1 {
+        font-size: 2rem;
+    }
+    
+    .message-image {
+        flex: 0 0 200px;
+    }
+}

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations & Fundraising | MAPOLY Alumni Association</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/donations.css">
+    <link rel="stylesheet" href="css/placeholders.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-placeholder">MAPOLY Alumni Logo</div>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="executive.html">Executives</a></li>
+                        <li><a href="donations.html" class="active">Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Donation Hero Section -->
+    <section class="donation-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Support MAPOLY, Give Back Today</h1>
+                <p>Your contribution helps us build a stronger alumni community and support our alma mater's growth.</p>
+                <a href="#donation-options" class="btn btn-primary btn-lg">Donate Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section">
+        <div class="container">
+            <h2 class="section-title">Your Impact</h2>
+            <p class="section-subtitle">See how your donations make a difference</p>
+            
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Scholarships</h3>
+                    <p>Funded 50+ scholarships for deserving students in the last academic year</p>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Infrastructure</h3>
+                    <p>Renovated 3 lecture halls and upgraded the campus library facilities</p>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Technology</h3>
+                    <p>Equipped 2 computer labs with modern equipment and software</p>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community</h3>
+                    <p>Organized 15+ career development workshops for current students</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Options Section -->
+    <section id="donation-options" class="donation-options">
+        <div class="container">
+            <h2 class="section-title">Choose Your Impact</h2>
+            <p class="section-subtitle">Select a donation option that resonates with you</p>
+            
+            <div class="donation-tiers">
+                <!-- Tier 1 -->
+                <div class="donation-tier">
+                    <div class="tier-header">
+                        <h3>₦20,000</h3>
+                        <p class="tier-name">Scholarship Fund</p>
+                    </div>
+                    <div class="tier-content">
+                        <p class="tier-description">Support deserving students with financial needs to pursue their education at MAPOLY.</p>
+                        <ul class="tier-benefits">
+                            <li><i class="fas fa-check"></i> Fund textbooks and study materials</li>
+                            <li><i class="fas fa-check"></i> Support tuition assistance</li>
+                            <li><i class="fas fa-check"></i> Recognition in our annual report</li>
+                        </ul>
+                        <a href="#donation-form" class="btn btn-primary select-tier" data-amount="20000" data-tier="Scholarship Fund">Select</a>
+                    </div>
+                </div>
+                
+                <!-- Tier 2 -->
+                <div class="donation-tier featured">
+                    <div class="tier-header">
+                        <div class="featured-badge">Most Popular</div>
+                        <h3>₦50,000</h3>
+                        <p class="tier-name">School Renovations</p>
+                    </div>
+                    <div class="tier-content">
+                        <p class="tier-description">Help improve campus facilities and create better learning environments for students.</p>
+                        <ul class="tier-benefits">
+                            <li><i class="fas fa-check"></i> Upgrade classrooms and labs</li>
+                            <li><i class="fas fa-check"></i> Improve campus infrastructure</li>
+                            <li><i class="fas fa-check"></i> Name recognition on donor wall</li>
+                            <li><i class="fas fa-check"></i> Invitation to annual donors' event</li>
+                        </ul>
+                        <a href="#donation-form" class="btn btn-primary select-tier" data-amount="50000" data-tier="School Renovations">Select</a>
+                    </div>
+                </div>
+                
+                <!-- Tier 3 -->
+                <div class="donation-tier">
+                    <div class="tier-header">
+                        <h3>₦200,000+</h3>
+                        <p class="tier-name">Legacy Donor</p>
+                    </div>
+                    <div class="tier-content">
+                        <p class="tier-description">Make a significant impact with a major gift that will leave a lasting legacy at MAPOLY.</p>
+                        <ul class="tier-benefits">
+                            <li><i class="fas fa-check"></i> Fund major campus projects</li>
+                            <li><i class="fas fa-check"></i> Naming opportunities available</li>
+                            <li><i class="fas fa-check"></i> VIP access to all alumni events</li>
+                            <li><i class="fas fa-check"></i> Special recognition at graduation</li>
+                            <li><i class="fas fa-check"></i> Personal meeting with the Rector</li>
+                        </ul>
+                        <a href="#donation-form" class="btn btn-primary select-tier" data-amount="200000" data-tier="Legacy Donor">Select</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Custom Amount Option -->
+            <div class="custom-amount">
+                <p>Prefer to give a different amount?</p>
+                <a href="#donation-form" class="btn btn-secondary select-tier" data-amount="custom" data-tier="Custom Donation">Custom Donation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Campaigns Section -->
+    <section class="current-campaigns">
+        <div class="container">
+            <h2 class="section-title">Current Fundraising Campaigns</h2>
+            <p class="section-subtitle">Join our ongoing initiatives to support MAPOLY</p>
+            
+            <div class="campaigns-grid">
+                <!-- Campaign 1 -->
+                <div class="campaign-card">
+                    <div class="campaign-image">
+                        <div class="image-placeholder campaign-placeholder">Library Expansion Project</div>
+                        <div class="campaign-badge">Featured</div>
+                    </div>
+                    <div class="campaign-content">
+                        <h3>Library Expansion Project</h3>
+                        <div class="campaign-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                            <div class="progress-stats">
+                                <span class="raised">₦15,000,000 raised</span>
+                                <span class="goal">of ₦20,000,000 goal</span>
+                            </div>
+                        </div>
+                        <p>Help us expand the campus library with new study spaces, digital resources, and updated collections.</p>
+                        <div class="campaign-meta">
+                            <span><i class="fas fa-calendar"></i> Ends: Dec 31, 2023</span>
+                            <span><i class="fas fa-users"></i> 125 Donors</span>
+                        </div>
+                        <a href="#donation-form" class="btn btn-primary select-campaign" data-campaign="Library Expansion Project">Support This Project</a>
+                    </div>
+                </div>
+                
+                <!-- Campaign 2 -->
+                <div class="campaign-card">
+                    <div class="campaign-image">
+                        <div class="image-placeholder campaign-placeholder">Alumni Scholarship Fund</div>
+                    </div>
+                    <div class="campaign-content">
+                        <h3>Alumni Scholarship Fund</h3>
+                        <div class="campaign-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 40%;"></div>
+                            </div>
+                            <div class="progress-stats">
+                                <span class="raised">₦4,000,000 raised</span>
+                                <span class="goal">of ₦10,000,000 goal</span>
+                            </div>
+                        </div>
+                        <p>Create opportunities for talented students facing financial challenges to complete their education at MAPOLY.</p>
+                        <div class="campaign-meta">
+                            <span><i class="fas fa-calendar"></i> Ends: Mar 15, 2024</span>
+                            <span><i class="fas fa-users"></i> 78 Donors</span>
+                        </div>
+                        <a href="#donation-form" class="btn btn-primary select-campaign" data-campaign="Alumni Scholarship Fund">Support This Project</a>
+                    </div>
+                </div>
+                
+                <!-- Campaign 3 -->
+                <div class="campaign-card">
+                    <div class="campaign-image">
+                        <div class="image-placeholder campaign-placeholder">Innovation Lab</div>
+                    </div>
+                    <div class="campaign-content">
+                        <h3>Innovation Lab</h3>
+                        <div class="campaign-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 25%;"></div>
+                            </div>
+                            <div class="progress-stats">
+                                <span class="raised">₦5,000,000 raised</span>
+                                <span class="goal">of ₦20,000,000 goal</span>
+                            </div>
+                        </div>
+                        <p>Fund a state-of-the-art innovation lab to foster entrepreneurship and technological advancement among students.</p>
+                        <div class="campaign-meta">
+                            <span><i class="fas fa-calendar"></i> Ends: Jun 30, 2024</span>
+                            <span><i class="fas fa-users"></i> 42 Donors</span>
+                        </div>
+                        <a href="#donation-form" class="btn btn-primary select-campaign" data-campaign="Innovation Lab">Support This Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Form Section -->
+    <section id="donation-form" class="donation-form-section">
+        <div class="container">
+            <h2 class="section-title">Make Your Donation</h2>
+            <p class="section-subtitle">Complete the form below to process your contribution</p>
+            
+            <div class="form-container">
+                <form id="donationForm" class="donation-form">
+                    <div class="form-header">
+                        <div class="selected-option">
+                            <h3>Your Selected Donation</h3>
+                            <p id="selectedTier">Please select a donation option above</p>
+                            <div class="amount-wrapper">
+                                <span class="currency">₦</span>
+                                <input type="text" id="donationAmount" name="amount" placeholder="Amount" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Personal Information</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="graduationYear">Graduation Year (if applicable)</label>
+                            <select id="graduationYear" name="graduationYear">
+                                <option value="">Select Year</option>
+                                <!-- Will be populated by JavaScript -->
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Payment Information</h4>
+                        <div class="payment-options">
+                            <div class="payment-option">
+                                <input type="radio" id="paystack" name="paymentMethod" value="paystack" checked>
+                                <label for="paystack">
+                                    <div class="image-placeholder payment-logo-placeholder">Paystack</div>
+                                    <span>Paystack</span>
+                                </label>
+                            </div>
+                            
+                            <div class="payment-option">
+                                <input type="radio" id="bankTransfer" name="paymentMethod" value="bankTransfer">
+                                <label for="bankTransfer">
+                                    <i class="fas fa-university"></i>
+                                    <span>Bank Transfer</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div id="paystackFields" class="payment-fields">
+                            <div class="form-group">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="text" id="cardNumber" name="cardNumber" placeholder="**** **** **** ****">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expiryDate">Expiry Date</label>
+                                    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="***">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="bankTransferFields" class="payment-fields" style="display: none;">
+                            <div class="bank-details">
+                                <p>Please use the following bank details to make your transfer:</p>
+                                <ul>
+                                    <li><strong>Bank Name:</strong> First Bank of Nigeria</li>
+                                    <li><strong>Account Name:</strong> MAPOLY Alumni Association</li>
+                                    <li><strong>Account Number:</strong> 2023456789</li>
+                                    <li><strong>Reference:</strong> Your Full Name + Donation</li>
+                                </ul>
+                                <p class="note">After making the transfer, please upload your proof of payment below.</p>
+                                <div class="form-group">
+                                    <label for="transferProof">Proof of Payment</label>
+                                    <input type="file" id="transferProof" name="transferProof">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h4>Additional Information</h4>
+                        <div class="form-group">
+                            <label for="comments">Comments (Optional)</label>
+                            <textarea id="comments" name="comments" rows="3" placeholder="Share why you're donating or any specific instructions"></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="anonymous" name="anonymous">
+                            <label for="anonymous">Make my donation anonymous</label>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter" checked>
+                            <label for="newsletter">Subscribe to our newsletter</label>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="termsAgree" name="termsAgree" required>
+                            <label for="termsAgree">I agree to the <a href="#">terms and conditions</a></label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-lg">Complete Donation</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donor Recognition Section -->
+    <section class="donor-recognition">
+        <div class="container">
+            <h2 class="section-title">Our Generous Donors</h2>
+            <p class="section-subtitle">Thank you to all who have contributed to our mission</p>
+            
+            <div class="donor-categories">
+                <div class="donor-category">
+                    <h3>Platinum Donors</h3>
+                    <ul class="donor-list">
+                        <li>Chief Olusegun Obasanjo (Class of 1970)</li>
+                        <li>Aliko Dangote Foundation</li>
+                        <li>Dr. Mike Adenuga (Class of 1975)</li>
+                        <li>MTN Nigeria</li>
+                        <li>Chief Kessington Adebutu (Class of 1968)</li>
+                    </ul>
+                </div>
+                
+                <div class="donor-category">
+                    <h3>Gold Donors</h3>
+                    <ul class="donor-list">
+                        <li>Mrs. Folorunsho Alakija (Class of 1976)</li>
+                        <li>Access Bank PLC</li>
+                        <li>Chief Afe Babalola (Class of 1965)</li>
+                        <li>Zenith Bank PLC</li>
+                        <li>Dr. Deji Adeleke (Class of 1978)</li>
+                        <li>Globacom Limited</li>
+                        <li>Chief Bola Shagaya (Class of 1980)</li>
+                    </ul>
+                </div>
+                
+                <div class="donor-category">
+                    <h3>Silver Donors</h3>
+                    <ul class="donor-list">
+                        <li>Class of 1990 (Group Donation)</li>
+                        <li>Mr. Femi Otedola (Class of 1985)</li>
+                        <li>First Bank of Nigeria</li>
+                        <li>Chief Razak Okoya (Class of 1972)</li>
+                        <li>Guaranty Trust Bank</li>
+                        <li>Mrs. Ibukun Awosika (Class of 1983)</li>
+                        <li>Nigerian Breweries PLC</li>
+                        <li>Chief Oba Otudeko (Class of 1970)</li>
+                        <li>And 25 more...</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="donor-note">
+                <p>We also extend our sincere gratitude to our numerous Bronze donors and individual contributors who have generously supported our cause. Your contributions, regardless of size, make a significant impact.</p>
+                <p class="note">* Some donors have chosen to remain anonymous</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to common questions about donations</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my donation tax-deductible?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, donations to the MAPOLY Alumni Association are tax-deductible in Nigeria as we are a registered non-profit organization. You will receive a receipt for your donation that can be used for tax purposes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How is my donation used?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Your donation directly supports the initiatives you select, whether it's scholarships, infrastructure improvements, or specific campaigns. We maintain full transparency with regular reports on how funds are utilized. Administrative costs are kept to a minimum, ensuring that the majority of your donation goes directly to the intended cause.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I make a recurring donation?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer monthly, quarterly, and annual recurring donation options. You can set up a recurring donation by selecting the frequency during the donation process. You can modify or cancel your recurring donation at any time by contacting our office.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my payment information secure?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We use industry-standard encryption and secure payment processors (Paystack) to ensure your payment information is protected. We do not store your credit card details on our servers. All transactions are processed through secure, PCI-compliant systems.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I donate if I'm not an alumnus?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We welcome donations from anyone who wishes to support MAPOLY, including family members of alumni, friends of the institution, corporations, and other organizations. Your support is greatly appreciated regardless of your affiliation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I get a receipt for my donation?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A receipt will be automatically emailed to you after your donation is processed. If you need an additional copy or have not received your receipt, please contact our office at donations@mapolyalumni.org or call +234 801 234 5678.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Have Questions About Donating?</h2>
+                <p>Our team is here to help with any questions about the donation process, specific campaigns, or other ways to support MAPOLY.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="tel:+2348012345678" class="btn btn-secondary"><i class="fas fa-phone"></i> Call Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-placeholder logo-white-placeholder">MAPOLY Alumni Logo</div>
+                    <p>Connecting and empowering MAPOLY graduates since 1979.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="executive.html">Executives</a></li>
+                        <li><a href="donations.html">Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> MAPOLY Campus, Abeokuta, Ogun State</p>
+                    <p><i class="fas fa-phone"></i> +234 803 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@mapolyalumni.org</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest updates and events.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MAPOLY Alumni Association. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/donations.js"></script>
+</body>
+</html>

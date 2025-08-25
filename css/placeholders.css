@@ -1,0 +1,130 @@
+/* Image Placeholders CSS */
+
+/* Common placeholder styles */
+.image-placeholder,
+.logo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px dashed #adb5bd;
+    min-height: 100px;
+    width: 100%;
+}
+
+/* Logo placeholders */
+.logo-placeholder {
+    height: 60px;
+    min-height: 60px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    padding: 0.5rem;
+}
+
+.logo-white-placeholder {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-color: #6c757d;
+}
+
+/* Specific placeholder styles */
+.hero-image-placeholder {
+    min-height: 400px;
+    background-color: #e2e8f0;
+    font-size: 24px;
+}
+
+.event-placeholder {
+    min-height: 200px;
+    background-color: #e2f0e2;
+}
+
+.gallery-placeholder {
+    min-height: 180px;
+    background-color: #f0e2e2;
+}
+
+.testimonial-placeholder {
+    width: 80px;
+    height: 80px;
+    min-height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.executive-placeholder {
+    min-height: 250px;
+    background-color: #e2e2f0;
+}
+
+.spotlight-placeholder {
+    min-height: 150px;
+    background-color: #f0f0e2;
+}
+
+.benefit-placeholder {
+    min-height: 120px;
+    background-color: #e2f0f0;
+}
+
+.campaign-placeholder {
+    min-height: 180px;
+    background-color: #f0e2f0;
+}
+
+.contact-image-placeholder {
+    min-height: 300px;
+    background-color: #e8f0e2;
+}
+
+.payment-logo-placeholder {
+    min-height: 40px;
+    width: 120px;
+    background-color: #f8f9fa;
+    font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-image-placeholder {
+        min-height: 250px;
+        font-size: 18px;
+    }
+    
+    .executive-placeholder,
+    .contact-image-placeholder {
+        min-height: 200px;
+    }
+    
+    .event-placeholder,
+    .gallery-placeholder,
+    .campaign-placeholder {
+        min-height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-placeholder {
+        height: 40px;
+        min-height: 40px;
+        font-size: 12px;
+    }
+    
+    .hero-image-placeholder {
+        min-height: 180px;
+        font-size: 16px;
+    }
+    
+    .testimonial-placeholder {
+        width: 60px;
+        height: 60px;
+        min-height: 60px;
+        font-size: 10px;
+    }
+}
